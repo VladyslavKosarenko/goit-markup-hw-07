@@ -51,6 +51,10 @@ button {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header > .container {
+  max-width: 428px;
+  margin: 0 auto;
+}
 .logo {
   font-family: "Raleway", sans-serif;
 
@@ -238,6 +242,10 @@ button {
   padding-top: 112px;
   padding-bottom: 112px;
 }
+.hero > .container {
+  max-width: 428px;
+  margin: 0 auto;
+}
 
 .hero-bg {
   background-image: linear-gradient(
@@ -320,6 +328,10 @@ button {
 .quality {
   padding-top: 96px;
   padding-bottom: 96px;
+}
+.quality > .container {
+  max-width: 428px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -936,10 +948,8 @@ button {
     display: none;
   }
 
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header > .container {
+    max-width: 768px;
   }
   .list {
     list-style: none;
@@ -955,14 +965,11 @@ button {
   }
   .header-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .header-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 121px;
   }
 
   .logo {
@@ -1030,6 +1037,7 @@ button {
   }
 
   .header-address {
+    display: contents;
     font-style: normal;
     margin-left: auto;
   }
@@ -1060,7 +1068,8 @@ button {
   }
 
   /* tablet hero */
-  .container {
+
+  .hero > .container {
     max-width: 768px;
   }
   .hero-bg {
@@ -1095,7 +1104,7 @@ button {
 
   /* table blok-quality */
   .quality > .container {
-    width: 768px;
+    max-width: 768px;
   }
   .quality-list {
     flex-direction: row;
@@ -1195,21 +1204,14 @@ button {
 /* desktop */
 
 @media screen and (min-width: 1158px) {
-  .container {
-    width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
+  .header > .container {
+    max-width: 1158px;
   }
-  .header {
-    margin: 0 auto;
-  }
-  .header-nav {
-    margin-right: 0;
-  }
+
   .header-logo-container {
     margin-right: 76px;
   }
+
   .header-address-list {
     display: flex;
     gap: 40px;
@@ -1230,6 +1232,9 @@ button {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+  .hero > .container {
+    max-width: 1158px;
   }
 
   .hero-bg {
@@ -1264,7 +1269,6 @@ button {
     padding-bottom: 120px;
   }
   .quality > .container {
-    width: 1158px;
     max-width: 1158px;
   }
   .icon-quality-list {
@@ -1314,6 +1318,9 @@ button {
   .about {
     display: contents;
     padding-bottom: 120px;
+  }
+  .about > .container {
+    max-width: 1158px;
   }
   .about-title {
     font-size: 36px;
