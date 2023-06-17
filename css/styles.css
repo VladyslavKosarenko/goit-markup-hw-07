@@ -380,7 +380,7 @@ button {
   padding: 96px 0;
 }
 .team > .container {
-  width: 264px;
+  max-width: 264px;
   padding: 0;
   margin: 0 auto;
 }
@@ -469,7 +469,8 @@ button {
   padding: 96px 0;
 }
 .customers > .container {
-  width: 428px;
+  max-width: 428px;
+  margin: 0 auto;
 }
 
 .customers-title {
@@ -1109,10 +1110,8 @@ button {
 
   /* tablet blok-team */
 
-  .team > .container,
-  .customers > .container {
-    width: 552px;
-    padding: 0;
+  .team > .container {
+    max-width: 552px;
   }
 
   .team-list {
@@ -1129,6 +1128,9 @@ button {
 
   .customers {
     padding: 0 108px;
+  }
+  .customers > .container {
+    max-width: 552px;
   }
 
   .customers-list {
@@ -1338,12 +1340,8 @@ button {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .team > .container,
-  .customers > .container {
-    width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
+  .team > .container {
+    max-width: 1158px;
   }
 
   .team-list {
@@ -1357,6 +1355,9 @@ button {
   /* desktop blok-customers */
   .customers {
     padding: 120px 0;
+  }
+  .customers > .container {
+    max-width: 1158px;
   }
 
   .customers-list {
