@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo link header-logo-container" href="./index.html"
@@ -43,11 +43,6 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
-          <svg class="mobile-menu-open-icon" width="30" height="19">
-            <use href="./images/icons.svg#icon-Vector-2"></use>
-          </svg>
-        </button>
 
         <address class="header-address">
           <ul class="header-address-list list">
@@ -65,80 +60,90 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-open" .js-open-menu>
+          <svg class="mobile-menu-open-icon" width="30" height="19">
+            <use href="./images/icons.svg#icon-Vector-2"></use>
+          </svg>
+        </button>
       </div>
-      <div class="mobile-menu visually-hidden">
+
+      <div class="mobile-menu is-open" .js-menu-container>
         <div class="mobile-menu-container">
-          <button type="button" class="mobile-menu-close-btn">
-            <svg class="mobile-menu-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu-nav-list list">
-            <li class="mobile-menu-nav-item">
-              <a class="mobile-menu-nav-link link" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="mobile-menu-nav-item">
-              <a class="mobile-menu-nav-link link" href="./portfolio.html">
-                Portfolio</a
-              >
-            </li>
-            <li class="mobile-menu-nav-item">
-              <a class="mobile-menu-nav-link link" href="">Contacts</a>
-            </li>
-          </ul>
-          <address class="mobile-menu-address">
-            <ul class="mobile-menu-address-list list">
-              <li class="mobile-menu-address-item">
-                <a
-                  class="mobile-menu-address-phone link"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+          <div class="mobile-contaier-top">
+            <button type="button" class="mobile-menu-close-btn" .js-close-menu>
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-nav-list list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link link" href="./index.html"
+                  >Studio</a
                 >
               </li>
-              <li class="mobile-menu-address-item">
-                <a
-                  class="mobile-menu-address-mail link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link link" href="./portfolio.html">
+                  Portfolio</a
                 >
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link link" href="">Contacts</a>
               </li>
             </ul>
-          </address>
-          <ul class="mobile-menu-icon-list list">
-            <li class="mobile-menu-icon-item">
-              <a href="" class="mobile-menu-icon-link">
-                <svg class="mobile-menu-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-icon-item">
-              <a href="" class="mobile-menu-icon-link">
-                <svg class="mobile-menu-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-icon-item">
-              <a href="" class="mobile-menu-icon-link">
-                <svg class="mobile-menu-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-icon-item">
-              <a href="" class="mobile-menu-icon-link">
-                <svg class="mobile-menu-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
+          <div class="mobile-container-bottom">
+            <address class="mobile-menu-address">
+              <ul class="mobile-menu-address-list list">
+                <li class="mobile-menu-address-item">
+                  <a
+                    class="mobile-menu-address-phone link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-address-item">
+                  <a
+                    class="mobile-menu-address-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-menu-icon-list list">
+              <li class="mobile-menu-icon-item">
+                <a href="" class="mobile-menu-icon-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-item">
+                <a href="" class="mobile-menu-icon-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-item">
+                <a href="" class="mobile-menu-icon-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-item">
+                <a href="" class="mobile-menu-icon-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- blok-hero -->
@@ -219,7 +224,7 @@
       </section> -->
 
       <!-- blok3-about-->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="about-title">What are we doing</h2>
           <ul class="about-list list">
@@ -252,14 +257,37 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- blok3-team  -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team-title-top">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img1.jpg  1x,
+                    ./images/desktop/img2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/table/img1.jpg   1x,
+                    ./images/table/img@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img1.jpg    1x,
+                    ./images/mobile/img1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <img
                 srcset="./images/desktop/img2x.jpg 2x"
                 src="./images/desktop/img1.jpg"
@@ -267,6 +295,7 @@
                 width="264"
                 height="260"
               />
+
               <div class="team-item-container">
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -303,6 +332,29 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img2.jpg    1x,
+                    ./images/desktop/img2x-1.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/table/img2.jpg    1x,
+                    ./images/table/img2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img2.jpg    1x,
+                    ./images/mobile/img2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <img
                 srcset="./images/desktop/img2x-1.jpg 2x"
                 src="./images/desktop/img2.jpg"
@@ -346,6 +398,29 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img3.jpg    1x,
+                    ./images/desktop/img2x-2.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/table/img3.jpg    1x,
+                    ./images/table/img3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img3.jpg    1x,
+                    ./images/mobile/img3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <img
                 srcset="./images/desktop/img2x-2.jpg 2x"
                 src="./images//desktop/img3.jpg"
@@ -353,6 +428,7 @@
                 width="264"
                 height="260"
               />
+
               <div class="team-item-container">
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -389,6 +465,29 @@
               </div>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img4.jpg    1x,
+                    ./images/desktop/img2x-3.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/table/img4.jpg    1x,
+                    ./images/table/img4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img4.jpg    1x,
+                    ./images/mobile/img4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <img
                 srcset="./images/desktop/img2x-3.jpg 2x"
                 src="./images//desktop/img4.jpg"
@@ -396,6 +495,7 @@
                 width="264"
                 height="260"
               />
+
               <div class="team-item-container">
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -433,7 +533,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Customers -->
 
@@ -655,5 +755,6 @@
       </div>
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -111,11 +111,15 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   padding-left: 40px;
   padding-top: 80px;
   padding-bottom: 40px;
   padding-right: 35px;
+  height: 100%;
 }
 .mobile-menu-close-btn {
   width: 24px;
@@ -142,12 +146,10 @@ button {
 .mobile-menu-close-icon {
   fill: #2e2f42;
 }
-.mobile-menu-nav-list {
-  margin-bottom: 244px;
-}
 .mobile-menu-nav-item {
   margin-bottom: 40px;
 }
+
 .mobile-menu-nav-link {
   font-weight: 700;
   font-size: 36px;
@@ -163,6 +165,7 @@ button {
 .mobile-menu-nav-link:focus {
   color: var(--second-btn-and-link-color);
 }
+
 .mobile-menu-address-list {
   margin-bottom: 8px;
 }
