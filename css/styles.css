@@ -55,7 +55,6 @@ button {
 }
 
 .header > .container {
-  max-width: 428px;
   margin: 0 auto;
 }
 .header-logo-container {
@@ -148,7 +147,6 @@ button {
   right: 24px;
   padding: 0;
   margin: 0;
-  opacity: 0.1;
   cursor: pointer;
 
   background: #e7e9fc;
@@ -164,7 +162,6 @@ button {
 }
 .mobile-menu-close-icon {
   stroke: #2e2f42;
-  opacity: unset;
 }
 .mobile-menu-nav-item {
   margin-bottom: 40px;
@@ -251,7 +248,6 @@ button {
   padding-bottom: 112px;
 }
 .hero > .container {
-  max-width: 428px;
   margin: 0 auto;
 }
 
@@ -262,9 +258,6 @@ button {
     ),
     url(..//images/desktop/bg-img/Dark-mobile-bg.jpg);
 
-  min-width: 428px;
-  min-height: 432px;
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -338,7 +331,7 @@ button {
   padding-bottom: 96px;
 }
 .quality > .container {
-  max-width: 428px;
+  /* max-width: 428px; */
   margin: 0 auto;
 }
 .visually-hidden {
@@ -361,13 +354,15 @@ button {
 
 .quality-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 72px;
   margin: 0 auto;
 }
 
 .quality-item {
-  max-width: 396px;
+  min-width: 396px;
 }
 
 .quality-title {
@@ -489,7 +484,6 @@ button {
   padding: 96px 0;
 }
 .customers > .container {
-  max-width: 428px;
   margin: 0 auto;
 }
 
@@ -553,7 +547,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 428px;
+
   margin: 0 auto;
 }
 .footer-container-left {
@@ -956,9 +950,6 @@ button {
     display: none;
   }
 
-  .header > .container {
-    max-width: 768px;
-  }
   .list {
     list-style: none;
   }
@@ -1069,18 +1060,12 @@ button {
 
   /* tablet hero */
 
-  .hero > .container {
-    max-width: 768px;
-  }
   .hero-bg {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(..//images/desktop/bg-img/Dark-tablet-bg.jpg);
-
-    min-width: 768px;
-    min-height: 436px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1104,7 +1089,6 @@ button {
 
   /* table blok-quality */
   .quality > .container {
-    max-width: 768px;
   }
   .quality-list {
     flex-direction: row;
@@ -1114,6 +1098,7 @@ button {
   }
 
   .quality-item {
+    min-width: 356px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -1134,11 +1119,9 @@ button {
   }
 
   /* tablet blok-customers */
-
   .customers > .container {
     max-width: 552px;
   }
-
   .customers-list {
     column-gap: 24px;
   }
@@ -1150,19 +1133,20 @@ button {
   /* tablet footer */
 
   .footer {
-    padding-top: 96px;
-    padding-bottom: 96px;
     margin: 0 auto;
   }
+  .footer > .container {
+    max-width: 552px;
+  }
   .footer-container {
-    width: 552px;
-
+    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
   }
+
   .footer-container-left {
     margin-right: 24px;
     align-items: flex-start;
@@ -1175,18 +1159,16 @@ button {
   }
 
   .footer-container-right {
-    align-items: flex-start;
+    display: block;
   }
 
   .subscribe-form {
-    display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
     gap: 24px;
   }
   .subscribe-input {
     width: 264px;
+    align-content: flex-start;
   }
   .subscribe-form:first-child {
     gap: 0px;
@@ -1203,14 +1185,15 @@ button {
 /* desktop */
 
 @media screen and (min-width: 1158px) {
-  .header > .container {
-    max-width: 1158px;
-  }
-
   .header-logo-container {
     margin-right: 76px;
   }
-
+  .header {
+    padding: 0 156px;
+  }
+  .header > .container {
+    padding: 0;
+  }
   .header-address-list {
     display: flex;
     gap: 40px;
@@ -1232,9 +1215,6 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
   }
-  .hero > .container {
-    max-width: 1158px;
-  }
 
   .hero-bg {
     background-image: linear-gradient(
@@ -1242,8 +1222,6 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(..//images/desktop/bg-img/imgbg.jpg);
-
-    min-height: 600px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -1292,7 +1270,7 @@ button {
   }
 
   .quality-item {
-    width: 264px;
+    min-width: 264px;
   }
   .quality-title {
     font-weight: 500;
@@ -1381,9 +1359,10 @@ button {
     display: flex;
     padding: 100px 0;
   }
+
   .footer-container {
-    min-width: 1158px;
     flex-wrap: nowrap;
+    justify-content: center;
   }
   .footer-container-left {
     margin-right: 120px;
@@ -1391,6 +1370,7 @@ button {
   }
   .footer-container-right {
     margin-left: 80px;
+    padding: 0;
   }
   .subscribe-input {
     opacity: unset;
