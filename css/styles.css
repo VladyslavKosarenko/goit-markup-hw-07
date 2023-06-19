@@ -148,7 +148,7 @@ button {
   right: 24px;
   padding: 0;
   margin: 0;
-
+  opacity: 0.1;
   cursor: pointer;
 
   background: #e7e9fc;
@@ -164,6 +164,7 @@ button {
 }
 .mobile-menu-close-icon {
   stroke: #2e2f42;
+  opacity: unset;
 }
 .mobile-menu-nav-item {
   margin-bottom: 40px;
@@ -665,7 +666,7 @@ button {
 
 .subscribe-input {
   height: 40px;
-  width: 264px;
+  width: 389px;
 
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -676,6 +677,7 @@ button {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   color: #ffffff;
+  opacity: 0.3;
 }
 .subscribe-input::placeholder {
   color: #ffffff;
@@ -1183,6 +1185,9 @@ button {
     align-items: center;
     gap: 24px;
   }
+  .subscribe-input {
+    width: 264px;
+  }
   .subscribe-form:first-child {
     gap: 0px;
   }
@@ -1386,6 +1391,9 @@ button {
   }
   .footer-container-right {
     margin-left: 80px;
+  }
+  .subscribe-input {
+    opacity: unset;
   }
 }
 
