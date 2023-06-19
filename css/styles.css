@@ -48,12 +48,19 @@ button {
 }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header > .container {
   max-width: 428px;
   margin: 0 auto;
+}
+.header-logo-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -545,7 +552,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 664px;
   width: 428px;
   margin: 0 auto;
 }
@@ -958,14 +964,6 @@ button {
     text-decoration: none;
   }
 
-  .header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  }
-  .header-container {
-    display: flex;
-  }
   .header-nav {
     display: flex;
     justify-content: center;
@@ -1135,9 +1133,6 @@ button {
 
   /* tablet blok-customers */
 
-  .customers {
-    padding: 0 108px;
-  }
   .customers > .container {
     max-width: 552px;
   }
@@ -1158,7 +1153,6 @@ button {
     margin: 0 auto;
   }
   .footer-container {
-    height: 456px;
     width: 552px;
 
     display: flex;
@@ -1170,7 +1164,7 @@ button {
   .footer-container-left {
     margin-right: 24px;
     align-items: flex-start;
-    margin-bottom: 0;
+    margin-bottom: 72px;
   }
 
   .footer-container-center {
@@ -1244,7 +1238,6 @@ button {
       ),
       url(..//images/desktop/bg-img/imgbg.jpg);
 
-    min-width: 1440px;
     min-height: 600px;
   }
   @media (min-device-pixel-ratio: 2),
@@ -1316,11 +1309,12 @@ button {
 
   /* desktom blok-about  */
   .about {
-    display: contents;
+    display: block;
     padding-bottom: 120px;
   }
   .about > .container {
     max-width: 1158px;
+    margin: 0 auto;
   }
   .about-title {
     font-size: 36px;
@@ -1336,9 +1330,10 @@ button {
   .about-list {
     display: flex;
     gap: 24px;
+    margin: 0 auto;
   }
   .about-item {
-    width: calc((100% - 48) / 3);
+    width: calc((100% - 48px) / 3);
   }
   /* desktom blok-team */
 
@@ -1387,12 +1382,13 @@ button {
   }
   .footer-container-left {
     margin-right: 120px;
+    margin-bottom: 0;
   }
-
   .footer-container-right {
     margin-left: 80px;
   }
 }
+
 /* header */
 /* .header {
   display: flex;
