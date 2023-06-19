@@ -1121,6 +1121,7 @@ button {
   /* tablet blok-customers */
   .customers > .container {
     max-width: 552px;
+    padding: 0;
   }
   .customers-list {
     column-gap: 24px;
@@ -1344,6 +1345,7 @@ button {
   }
   .customers > .container {
     max-width: 1158px;
+    padding: 0 16px;
   }
 
   .customers-list {
