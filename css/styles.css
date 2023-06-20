@@ -33,7 +33,31 @@ img {
 button {
   cursor: pointer;
 }
+@media screen and (max-width: 427px) {
+  .hero-bg {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(..//images/desktop/bg-img/Dark-mobile-bg.jpg);
 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop/bg-img/Dark-mobile-bg@2x.jpg);
+    }
+  }
+}
 /* mobile */
 .container {
   padding: 0 16px;
@@ -256,6 +280,25 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
+    url(..//images/desktop/bg-img/Dark-tablet-bg.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/bg-img/Dark-tablet-bg@2x.jpg);
+  }
+}
+
+/* .hero-bg {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(..//images/desktop/bg-img/Dark-mobile-bg.jpg);
 
   background-repeat: no-repeat;
@@ -273,7 +316,7 @@ button {
       ),
       url(../images/desktop/bg-img/Dark-mobile-bg@2x.jpg);
   }
-}
+} */
 
 .hero-container {
   display: flex;
@@ -304,7 +347,7 @@ button {
   line-height: 1.5;
 
   display: flex;
-  margin: 0 auto;
+
   letter-spacing: 0.04em;
 
   color: var(--color-white);
@@ -637,6 +680,9 @@ button {
   fill: #f4f4fd;
 }
 
+.footer-container-right {
+  width: 100%;
+}
 .subscribe-text {
   font-weight: 500;
   font-size: 16px;
@@ -648,6 +694,7 @@ button {
   margin-bottom: 16px;
 }
 .subscribe-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -657,10 +704,12 @@ button {
 .subscribe-form:first-child {
   gap: 0px;
 }
-
+.subscribe-label {
+  width: 100%;
+}
 .subscribe-input {
   height: 40px;
-  width: 389px;
+  width: 100%;
 
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -714,6 +763,7 @@ button {
 
 .backdrop {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -731,8 +781,8 @@ button {
 .modal {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 96px;
+  transform: translateX(-50%);
   min-height: 584px;
   min-width: 392px;
   background: #fcfcfc;
@@ -1065,6 +1115,25 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
+      url(..//images/desktop/bg-img/imgbg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop/bg-img/people-dasktop-office2x.jpg);
+    }
+  }
+
+  /* .hero-bg {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(..//images/desktop/bg-img/Dark-tablet-bg.jpg);
   }
   @media (min-device-pixel-ratio: 2),
@@ -1077,7 +1146,7 @@ button {
         ),
         url(../images/desktop/bg-img/Dark-tablet-bg@2x.jpg);
     }
-  }
+  } */
 
   .hero-title {
     font-size: 56px;
@@ -1088,8 +1157,7 @@ button {
   }
 
   /* table blok-quality */
-  .quality > .container {
-  }
+
   .quality-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1100,6 +1168,9 @@ button {
   .quality-item {
     min-width: 356px;
     width: calc((100% - 24px) / 2);
+  }
+  .quality-title {
+    text-align: start;
   }
 
   /* tablet blok-team */
