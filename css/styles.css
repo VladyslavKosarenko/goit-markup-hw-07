@@ -35,7 +35,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .quality-item {
-    max-width: 396px;
+    max-width: 100%;
   }
 }
 
