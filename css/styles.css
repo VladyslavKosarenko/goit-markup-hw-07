@@ -404,7 +404,7 @@ button {
 }
 .team > .container {
   max-width: 264px;
-  padding: 0;
+
   margin: 0 auto;
 }
 .team-title-top {
@@ -749,8 +749,8 @@ button {
   left: 50%;
   top: 96px;
   transform: translateX(-50%);
-  height: 590px;
-  width: 392px;
+  height: 584px;
+  max-width: 392px;
   margin: 0 auto;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -814,7 +814,6 @@ button {
 }
 .modal-form-imput-container {
   position: relative;
-  display: flex;
 }
 .modal-imput {
   width: 360px;
@@ -977,20 +976,26 @@ button {
   }
 
   .modal {
-    width: 290px;
+    width: 100%;
     height: 633px;
   }
 
   .modal-form {
-    width: 259px;
+    width: 100%;
+  }
+  .modal-form-container {
+    width: 100%;
   }
 
   .modal-imput {
-    width: 259px;
+    width: 100%;
+  }
+  .form-textarea-container {
+    width: 100%;
   }
 
   .modal-textarea {
-    width: 259px;
+    width: 100%;
   }
 }
 
@@ -1171,7 +1176,7 @@ button {
   /* tablet blok-team */
 
   .team > .container {
-    max-width: 552px;
+    max-width: 584px;
   }
 
   .team-list {
@@ -1186,7 +1191,7 @@ button {
 
   /* tablet blok-customers */
   .customers > .container {
-    max-width: 552px;
+    max-width: 584px;
   }
   .customers-list {
     column-gap: 24px;
@@ -1202,10 +1207,9 @@ button {
     margin: 0 auto;
   }
   .footer > .container {
-    max-width: 552px;
+    max-width: 584px;
   }
   .footer-container {
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
