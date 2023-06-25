@@ -999,6 +999,150 @@ button {
   }
 }
 
+/* mobile-portfolio */
+/* hero */
+.portfolio-hero {
+  padding: 48px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.portfolio-hero > .container {
+  max-width: 428px;
+  margin: 0 auto;
+}
+
+.portfolio-hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto;
+  justify-content: start;
+  margin-bottom: 48px;
+  padding-right: 18px;
+}
+
+.portfolio-hero-btn {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.64px;
+
+  color: var(--first-btn-and-link-color);
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+.portfolio-hero-btn:hover,
+.portfolio-hero-btn:focus {
+  color: #ffffff;
+  background-color: var(--second-btn-and-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: 1px solid transparent;
+}
+
+.portfolio-about-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.portfolio-about-item {
+  background: #ffffff;
+}
+
+.portfolio-about-link {
+  display: block;
+  transition: box-shadow var(--transition-dur-and-func);
+}
+.portfolio-about-link:hover,
+.portfolio-about-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.backdrop-container {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  padding: 40px 32px;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #f4f4fd;
+  background: var(--first-btn-and-link-color);
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform var(--transition-dur-and-func);
+}
+.portfolio-about-link:hover .overlay,
+.portfolio-about-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
+.portfolio-about-container {
+  max-width: 396px;
+  padding: 32px 16px;
+  padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-about-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.4px;
+
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+.portfolio-about-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.32px;
+
+  color: var(--text-color);
+}
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -1251,6 +1395,36 @@ button {
     min-width: 408px;
     padding: 72px 24px 24px 24px;
   }
+
+  /* tablet-portfolio */
+  /* hero */
+  .portfolio-hero {
+    padding: 64px 0;
+  }
+
+  .portfolio-hero > .container {
+    max-width: 768px;
+  }
+
+  .portfolio-hero-list {
+    justify-content: center;
+    margin-bottom: 64px;
+    padding-right: 0;
+  }
+
+  .portfolio-hero-btn {
+    padding: 12px 24px;
+  }
+
+  .portfolio-about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .about-item-img {
+    max-width: 356px;
+  }
 }
 
 /* desktop */
@@ -1446,6 +1620,24 @@ button {
   }
   .subscribe-input {
     opacity: unset;
+  }
+  /* desktop-portfolio */
+  /* hero */
+  .portfolio-hero {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-hero > .container {
+    max-width: 1158px;
+  }
+
+  .portfolio-hero-list {
+    margin-bottom: 72px;
+  }
+
+  .about-item-img {
+    max-width: 359px;
   }
 }
 
@@ -2273,7 +2465,7 @@ button {
 } */
 /* portfolio */
 /* hero */
-.portfolio-hero {
+/* .portfolio-hero {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -2415,4 +2607,4 @@ button {
   letter-spacing: 0.02em;
 
   color: var(--text-color);
-}
+} */
