@@ -1108,7 +1108,7 @@ button {
   color: #f4f4fd;
   background: var(--first-btn-and-link-color);
   overflow: auto;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform var(--transition-dur-and-func);
 }
 .portfolio-about-link:hover .overlay,
